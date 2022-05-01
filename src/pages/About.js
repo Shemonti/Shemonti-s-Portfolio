@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import Button from '../components/Button';
+// import Button from '../components/Button';
 import AboutImg from '../assets/images/diu2.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
@@ -71,6 +71,25 @@ const AboutPageStyles = styled.div`
     }
   }
 `;
+const Button = styled.button`
+  font-size: 20px;
+  padding: 25px 60px;
+  border-radius: 10px;
+  margin: 10px 0px;
+  cursor: pointer;
+  color: black;
+  .button {
+    background-color: ${(props) =>
+      props.outline ? 'transperant' : 'var(--gray-1)'};
+
+    display: inline-block;
+  }
+  @media only screen and (max-width: 768px) {
+    .button {
+      font-size: 1.8rem;
+    }
+  }
+`;
 
 export default function About() {
   return (
@@ -101,10 +120,9 @@ export default function About() {
                   abroad for higher study on machine learning.
                 </PText>
               </div>
-              <Button
-                btnText="Download CV"
-                btnLink="https://drive.google.com/file/d/1wYNk5BgoHI-QRxCygIX_RIYevESiwpYg/view?usp=sharing"
-              />
+              <a href="https://drive.google.com/file/d/1wYNk5BgoHI-QRxCygIX_RIYevESiwpYg/view?usp=sharing">
+                <Button btnText="Download CV">Download CV</Button>
+              </a>
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />

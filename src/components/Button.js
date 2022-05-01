@@ -21,14 +21,26 @@ const ButtonStyle = styled.div`
     }
   }
 `;
-
-export default function Button(props) {
+export default function Button({
+  btnText = 'test',
+  btnLink = 'test',
+  outline = false,
+}) {
   return (
-    // eslint-disable-next-line react/destructuring-assignment
-    <ButtonStyle outline={props.outline} className="button-wrapper">
-      <Link className="button" onClick={() => window.open(props.btnLink)}>
-        {props.btnText}
+    <ButtonStyle outline={outline} className="button-wrapper">
+      <Link className="button" to={btnLink}>
+        {btnText}
       </Link>
     </ButtonStyle>
   );
 }
+// export default function Button(props) {
+//   return (
+//     // eslint-disable-next-line react/destructuring-assignment
+//     <ButtonStyle outline={props.outline} className="button-wrapper">
+//       <Link className="button" onClick={() => window.open(props.btnLink)}>
+//         {props.btnText}
+//       </Link>
+//     </ButtonStyle>
+//   );
+// }
