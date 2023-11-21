@@ -101,26 +101,27 @@ export default function About() {
               <p className="about__subheading">
                 Hi, I am <span>Shemonti Barua</span>
               </p>
-              <h2 className="about__heading">A Web developer</h2>
+              {/* <h2 className="about__heading">A Web developer</h2> */}
               <div className="about__info">
                 <PText>
-                  I am from chittagong, Bangladesh. A place of beauty and
+                  I am from Chittagong, Bangladesh. A place of beauty and
                   nature. Since my childhood, i love art and design. I always
                   try to design stuff with my unique point of view. I also love
                   to create things that can be usefull to others.
                   <br /> <br />
-                  I started coding since I entered into university.Coding is
-                  also an art for me. I love it and now I have the opportunity
-                  to design along with the coding. I find it really interesting
-                  and I enjoyed the process a lot.
+                  I am deeply passionate about Machine Learning, Deep Learning,
+                  and Artificial Intelligence. I aspire to pursue advanced
+                  studies in this field to expand my knowledge and make
+                  meaningful contributions to society and the global community.
                   <br />
-                  <br />I am also a Machine Learning enthusiast.I have done a
-                  course on Machine Learning. Also have some projects on machine
-                  learning.I have Interest in deep learning aslo. I want to go
-                  abroad for higher study on machine learning.
+                  <br />
+                  Furthermore, I started coding since I entered into
+                  university.Coding is also an art for me. I love it and now I
+                  have the opportunity to design along with the coding. I find
+                  it really interesting and I enjoyed the process a lot.
                 </PText>
               </div>
-              <a href="https://drive.google.com/file/d/1wYNk5BgoHI-QRxCygIX_RIYevESiwpYg/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1XZE736MXsTQ_oV-25KM25TQhCucl-9Cb/view?usp=drive_link">
                 <Button btnText="Download CV">Download CV</Button>
               </a>
             </div>
@@ -141,43 +142,9 @@ export default function About() {
                 items={['Holy Cross College ,Dhaka']}
               />
               <AboutInfoItem
-                title="Varsity"
+                title="University"
                 items={['Chittagong University of Engineering and Technology']}
               />
-            </div>
-            <div className="about__info__item">
-              <h1 className="about__info__heading">My Skills</h1>
-
-              <AboutInfoItem
-                title="FrontEnd"
-                items={['HTML', 'CSS', 'JavaScript', 'REACT']}
-              />
-              <AboutInfoItem
-                title="BackEnd"
-                items={['Node', 'Express', 'PHP']}
-              />
-              <AboutInfoItem
-                title="Design"
-                items={['Photoshop', 'After Effects']}
-              />
-            </div>
-            <div className="about__info__item">
-              <h1 className="about__info__heading">Experiences</h1>
-
-              <AboutInfoItem
-                title="Jun 2021 - Oct 2021"
-                items={['React Developer Interns at Mechanic koi ']}
-              />
-              <AboutInfoItem
-                title="Mar 2022 - Present"
-                items={[
-                  'Global Business Relationship Manager(Internship) at TESCOM Business Solutions  ',
-                ]}
-              />
-              {/* <AboutInfoItem
-                title="2016-"
-                items={['Freelance web Developer']}
-              /> */}
             </div>
           </div>
         </div>

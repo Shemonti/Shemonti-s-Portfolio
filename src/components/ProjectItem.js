@@ -43,7 +43,7 @@ const ProjectItemStyles = styled.div`
   }
 `;
 
-export default function ProjectItem({
+export default function Projectitem({
   img = ProjectImg,
   title = 'Project Name',
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',

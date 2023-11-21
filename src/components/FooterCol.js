@@ -15,7 +15,7 @@ const ColStyle = styled.div`
   }
 `;
 
-export default function FooterCol({
+export default function Footercol({
   heading = 'Col Heading',
   links = [
     {

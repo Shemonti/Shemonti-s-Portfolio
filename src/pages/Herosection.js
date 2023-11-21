@@ -4,7 +4,7 @@ import HeroImg from '../assets/images/dia.png';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
-import PText from './PText';
+import PText from '../components/PText';
 
 const HeroStyles = styled.div`
   .hero {
@@ -143,7 +143,7 @@ const HeroStyles = styled.div`
   }
 `;
 
-export default function HeroSection() {
+export default function Herosection() {
   return (
     <HeroStyles>
       <div className="hero">
@@ -157,8 +157,8 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <PText>
-              I am an Machine learning enthusiast.I have done several projects
-              on various Ml topics. I also love to design and make new web
+              I am a Machine learning enthusiast.I have done several projects on
+              various Ml topics. In addition, I love to design and make new web
               experiences for the people.
             </PText>
             <Button btnText="see my works" btnLink="/projects" />

@@ -58,10 +58,10 @@ export default function Footer() {
       <div className="container">
         <div className="footer__col1">
           <h1 className="footer__col1__title">Shemonti Barua</h1>
-          <PText>
+          {/* <PText>
             A web designer and developer.I always make websites that have unique
             designs and also has a good performance rate.
-          </PText>
+          </PText> */}
         </div>
         <div className="footer__col2">
           <FooterCol
@@ -111,7 +111,7 @@ export default function Footer() {
         </div>
         <div className="footer__col4">
           <FooterCol
-            heading="social Links"
+            heading="Social Links"
             links={[
               {
                 title: 'Facebook',

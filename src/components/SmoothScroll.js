@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import Scrollbar from 'react-smooth-scrollbar';
 
-export default function SmoothScroll({ children }) {
+export default function Smoothscroll({ children }) {
   const { pathname } = useLocation();
   const ref = useRef(null);
   useEffect(() => {
